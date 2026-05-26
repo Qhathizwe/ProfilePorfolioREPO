@@ -12,7 +12,7 @@
 .logo-slogan
 {
     color: #38bdf8;
-    font-size: 12px;
+    font-size: 11px;
     
 }
 .highlight{
@@ -28,8 +28,9 @@ nav {
     padding: 20px 60px;
     z-index: 500;
     width: 100%;
-    font-size: 25px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold; 
 }
 
 nav p{
@@ -43,8 +44,7 @@ nav ul
     display: flex;
     gap: 50px;
     margin: 20px;
-    font-family: arial;
-    font-weight: bold;  
+     
 }
 nav a
 {
@@ -58,7 +58,7 @@ nav a
 
 nav a:hover
 {
-    color: orangered;
+    color: cyan;
 }
 
 /* HERO */
@@ -154,6 +154,7 @@ font-size: 52px;
     display: flex;
     color: black;
     margin-top: 150px;
+    margin-bottom: 150px;
     text-decoration: none;
     width: 100%;
 }
@@ -161,7 +162,7 @@ font-size: 52px;
 {
     display: flex;
     align-items: flex-start;
-    gap: 150px;
+    gap: 100px;
     max-width: 1200px;
     margin: 0 auto;
     border-radius: 12px;
@@ -171,30 +172,38 @@ font-size: 52px;
     flex: 1;
     text-align: left;
 }
-.contact h3{
+.contact h1{
     color:#00bfff;
-    font-size: 42px;
+    font-size: 30px;
     margin-bottom: 20px;
     font-size: 38px;
     font-weight: 700;
 }
 .contact p{
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 14px;
+    line-height: 1.3;
     color:black;
     margin: 8px 0;
 }
 /*center column */
+.social.links{
+    line-height: 1.0;
+}
+.social.links img :hover{
+    transition: scale(1.2);
+}
 .quick-links{
     flex: 1;
     text-align: center;
 }
-.quick-links h4 {
+.quick-links h3
+{
     color: #00bfff;
     font-size: 30px;
     margin-bottom: 20px;
 }
-.quick-links a {
+.quick-links a 
+{
     display: block;
     color: #1e293b;
     text-decoration: none;
@@ -219,13 +228,22 @@ font-size: 52px;
     height: 150px;
     border: none;
 }
-
-/*footer */
-footer 
-{
-    background: #0f172a;
-    z-index: 500;
+/*FOOTER */
+footer{
+    display: flex;
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
     position: fixed;
+    bottom: 0;
     width: 100%;
-    padding: 20px 60px;
+}
+.footer-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
